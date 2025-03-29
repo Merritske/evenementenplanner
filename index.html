@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
     <title>evenementenplanner</title>
 </head>
+
 <body>
+
     <head>
-      <h1>evenementenplanner</h1>
+        <h1>evenementenplanner</h1>
     </head>
     <main>
         <div id="evenementgegevens">
-             <form action="/index.js" method="post" id="evenement">
-            <label for="eventnaam">Vul de naam van je evenement in</label> 
-            <input type="text" id="eventnaam">
-            <label for="wanneer">Wanneer</label> 
-            <input type="text" id="wanneer">
-            <label for="waar">Waar</label> 
-            <input type="text" id="waar">
-            <input type="button" value="opslaan" onclick=opslaan()>
-        </form>
+            <form action="/index.js" method="post" id="evenement">
+                <label for="eventnaam">Vul de naam van je evenement in</label>
+                <input type="text" id="eventnaam">
+                <label for="wanneer">Wanneer</label>
+                <input type="text" id="wanneer">
+                <label for="waar">Waar</label>
+                <input type="text" id="waar">
+                <input type="button" value="opslaan" onclick=opslaan()>
+            </form>
         </div>
-       
+<button onclick=getevent()>
+get event
+</button>
     </main>
 </body>
 <script src="index.js"></script>
+
 </html>
