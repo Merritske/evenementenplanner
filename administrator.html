@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="be-nl">
 
 <head>
     <meta charset="UTF-8">
@@ -10,16 +10,17 @@
 
 <body>
 
-    <head>
+    <header>
         <h1>evenementenplanner</h1>
-    </head>
+    </header>
     <main>
-        <div id="evenementgegevens">
+<!--Event aanmaken-->
+        <div class="evenementgegevens">
             <form action="/index.js" method="post" id="evenement">
                 <label for="eventnaam">Vul de naam van je evenement in</label>
                 <input type="text" id="eventnaam">
                 <label for="wanneer">Wanneer</label>
-                <input type="text" id="wanneer">
+                <input type="date" id="wanneer">
                 <label for="waar">Waar</label>
                 <input type="text" id="waar">
                 <input type="button" value="opslaan" onclick=opslaan()>
@@ -28,6 +29,12 @@
 <button onclick=getevent()>
 get event
 </button>
+<!--Welke taken moeten gebeuren?
+Takenlijst opstellen met deadline-->
+
+    <!--of een lijst maken, met listelement?
+    dan kan er meer informatie weergegeven worden?-->
+
     </main>
 </body>
 <script src="index.js"></script>
