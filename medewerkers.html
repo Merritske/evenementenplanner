@@ -9,7 +9,14 @@
 
 <body>
     <header>
-        <div class="evenementgegevens"></div>
+        <div id="gegevensTonen">
+            <h1>
+Het evenement:
+            </h1>
+        </div>        
+        <button onclick=getevent()>
+            get event
+        </button>
     </header>
     <main>
         <h2>Aanmelden medewerkers.</h2>
@@ -19,6 +26,7 @@
             <label for="email">Emailadres</label>
             <input type="email" name="email" id="email">
         </form>
+
         <form action="">
             <label for="takenlijst">Kies een taak:</label>
             <select id="takenlijst" name="takenlijst">
@@ -39,4 +47,5 @@
     </main>
 </body>
 <script src="index.js"></script>
+
 </html>
