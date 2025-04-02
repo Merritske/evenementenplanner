@@ -35,7 +35,7 @@
 
         <!--Welke taken moeten gebeuren?
 Takenlijst opstellen met deadline-->
-        <div class="takenlijst">
+        <div id="takenlijst">
             <form action="">
                 <div class="row">
                        <label for="naamTaak">Vul een taak in</label>
@@ -49,15 +49,29 @@ Takenlijst opstellen met deadline-->
                <label for="aantalPersonen">hoeveel mensen zijn nodig om deze taak uit te voeren?</label>
                 <input type="number" name="aantalPersonen" id="aantalPersonen">
          </div>
+         <di class="row">
+            <label for="opmerkingen">opmerkingen</label>
+            <input type="text" name="opmerkingen" id="opmerkingen">
+         </di>
             </form>
             <button onclick=voegTaakToe()>Voeg taak toe</button>
         </div>
 
                 <!--of een lijst maken, met listelement?
     dan kan er meer informatie weergegeven worden?-->
-        <div id="taken">
+        <div >
 <!--de opgegeven taken in een lijst zetten, mogelijkheid om taken nog te wijzigen of verwijderen-->
-        </div>
+<table id="taken">
+    <tr>
+        <td>taak</td>
+        <td>deadline</td>
+        <td>aantal personen</td>
+        <td>opmerkingen</td>
+    </tr>
+
+</table>      
+
+</div>
 
 
     </main>
