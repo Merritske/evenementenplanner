@@ -30,30 +30,6 @@ function opslaan() {
   console.log(eventcontainer)
 }
 console.log(eventTonen)
-function getevent() {
-  console.log(eventcontainer)
-  let getEvent = JSON.parse(localStorage.getItem("evenementContainer"))
-  console.log(getEvent)
-
-  getEvent.forEach(element => {
-
-    //   eventTonen.appendChild('ul')
-    //  let item = list.appendChild('li')
-    //  let itemInhoud = item.textContent(element)
-
-    //om de datum juist te zetten volgens onze notatie, uitgeschreven met voluit de maanden!!!
-    //getdate() - getMonth() -getYear()
-    eventTonen.innerHTML +=
-      `<ul>
-   <li>wat: ${element.wat}</li>
- <li>Waar: ${element.waar}</li>
-<li>Wanneer: ${element.wanneer}</li>
- </ul>
-`
-    // console.log(itemInhoud)
-  })
-
-}
 
 //takenlijst - draaiboek
 let takenlijst = []
@@ -81,3 +57,31 @@ taken.innerHTML +=
 </tr>`
 }
 
+
+function getevent() {
+  console.log(eventcontainer)
+  let getEvent = JSON.parse(localStorage.getItem("evenementContainer"))
+
+  getEvent.forEach(element => {
+
+    //   eventTonen.appendChild('ul')
+    //  let item = list.appendChild('li')
+    //  let itemInhoud = item.textContent(element)
+
+    //om de datum juist te zetten volgens onze notatie, uitgeschreven met voluit de maanden!!!
+    //getdate() - getMonth() -getYear()
+    eventTonen.innerHTML +=
+      `<ul>
+   <li>wat: ${element.wat}</li>
+ <li>Waar: ${element.waar}</li>
+<li>Wanneer: ${element.wanneer}</li>
+ </ul>
+`
+  })
+let getTaken = JSON.parse(localStorage.getItem("taakContainer"))
+console.log(getTaken)
+for(let i=0 ; i< getTaken.length; i++){
+  console.log(getTaken[i].naamTaak)
+
+}
+}
