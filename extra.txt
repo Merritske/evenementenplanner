@@ -1,0 +1,10 @@
+app maken voor mensen die feestje willen organiseren.
+type feestje en dan voorbeelden
+    welk soort eten
+    hoeveel personen zullen deelnemen
+    afhankelijk van het aantal personen, hoeveel drank en eten
+    extra benodigdheden: servietten, decoratie,...
+
+een winkelketen mijn idee verkopen
+of bedrijven die diensten kunnen leveren, cateraars of tentenverhuurders laten adverteren op de app
+

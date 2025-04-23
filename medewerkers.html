@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
     <title>evenementenplanner - medewerkers</title>
 </head>
 
-<body>
+<body onload=getevent()>
     <header>
         <div id="gegevensTonen">
             <h1>
@@ -20,22 +21,22 @@ Het evenement:
     </header>
     <main>
         <h2>Aanmelden medewerkers.</h2>
-        <form action="">
+        <form action="" method="get">
+            <div id="naamMedewerker" >
             <label for="naam">Naam: </label>
             <input type="text" id="naam">
             <label for="email">Emailadres</label>
             <input type="email" name="email" id="email">
-        </form>
-
-        <form action="">
-            <label for="takenlijst">Kies een taak:</label>
-            <select id="takenlijst" name="takenlijst">
-                <option value="affiche maken">affiche maken</option>
-                <option value="affiches ophangen">affiches ophangen</option>
-                <option value="flyeren">flyeren</option>
+</div>
+<div id="takenSelectie">
+  <label for="takenlijst">Kies een taak:</label>
+            <select id="selectieTaak" name="takenlijst">
+                <option value="">Kies een taak</option>
             </select>
+</div>
+            <button type="submit">Bevestig je medewerking</button>
         </form>
-        <form action="">
+        <!-- <form action="">
             <label for="taken">Kies een taak:</label>
             <select id="taken" name="taken">
                 <option value="tafel klaar zetten">tafel klaar zetten</option>
@@ -43,7 +44,7 @@ Het evenement:
                 <option value="tafel opruimen">tafel opruimen</option>
                 <option value="afwassen">afwassen</option>
             </select>
-        </form>
+        </form> -->
     </main>
 </body>
 <script src="index.js"></script>

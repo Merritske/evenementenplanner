@@ -8,7 +8,6 @@ let eventGegevens = []
 let eventTonen = document.getElementById("gegevensTonen")
 
 function opslaan() {
-
   eventGegevens.push({ wat: evenet.value, waar: waar.value, wanneer: wanneer.value })
   localStorage.setItem("evenementContainer", JSON.stringify(eventGegevens))
   console.log(eventGegevens)
@@ -57,6 +56,7 @@ taken.innerHTML +=
 </tr>`
 }
 
+let selectieTaak = document.getElementById('selectieTaak')
 
 function getevent() {
   console.log(eventcontainer)
@@ -82,6 +82,17 @@ let getTaken = JSON.parse(localStorage.getItem("taakContainer"))
 console.log(getTaken)
 for(let i=0 ; i< getTaken.length; i++){
   console.log(getTaken[i].naamTaak)
-
+eventTonen.innerHTML +=
+`<ul>
+<li>taak: ${getTaken[i].naamTaak}</li>
+<li>deadline: ${getTaken[i].deadline}</li>
+<li>Wie: ${getTaken[i].aantalPersonen}</li>
+<li>opmerkingen: ${getTaken[i].opmerkingen}</li>
+</ul>
+`
+selectieTaak.innerHTML +=
+`
+                <option value="${getTaken[i].naamTaak}">${getTaken[i].naamTaak}</option>
+`
 }
 }

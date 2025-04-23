@@ -1,21 +1,51 @@
-ul{
+:root,
+html,
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 15px;
+}
+
+ul {
     list-style-type: none;
 }
-#takenlijst, #evenementgegevens{
+
+#takenlijst,
+#evenementgegevens {
     margin: 5px;
     border: 3px solid black;
     padding: 10px;
     width: 80%;
 }
-#takenlijst input, #evenementgegevens input{
+
+#takenlijst input,
+#evenementgegevens input {
     margin: 5px;
     padding: 5px;
 }
-tr,td{
+
+tr,
+td {
     border-left: 2px solid black;
     border-bottom: 5px solid black;
     padding: 10px;
 }
-table{
+
+table {
     width: 100%;
+}
+
+form {
+    width: 800px
+}
+
+input {
+    font-size: larger;
+    margin: 0.5rem;
+}
+
+#naamMedewerker {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2rem;
 }
