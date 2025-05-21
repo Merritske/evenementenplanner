@@ -7,6 +7,8 @@ let wanneer = document.getElementById("wanneer")
 let eventGegevens = []
 let eventTonen = document.getElementById("gegevensTonen")
 
+//EVENTPLANNER
+
 function opslaan() {
   eventGegevens.push({ wat: evenet.value, waar: waar.value, wanneer: wanneer.value })
   localStorage.setItem("evenementContainer", JSON.stringify(eventGegevens))
@@ -43,7 +45,7 @@ function voegTaakToe() {
     'naamTaak': naamTaak.value,
     'deadline': deadline.value,
     'aantalPersonen': aantalPersonen.value,
-    'opmerkinge': opmerkingen
+    'opmerkingen': opmerkingen
   })
   console.log(takenlijst)
   localStorage.setItem("taakContainer", JSON.stringify(takenlijst))
@@ -90,9 +92,16 @@ eventTonen.innerHTML +=
 <li>opmerkingen: ${getTaken[i].opmerkingen}</li>
 </ul>
 `
-selectieTaak.innerHTML +=
+
+}
+}
+function aanmelden(){
+  let getTaken = JSON.parse(localStorage.getItem("taakContainer"))
+  for(let i=0 ; i< getTaken.length; i++){
+  selectieTaak.innerHTML +=
 `
                 <option value="${getTaken[i].naamTaak}">${getTaken[i].naamTaak}</option>
-`
+`}
+
 }
-}
+

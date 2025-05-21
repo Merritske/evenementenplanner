@@ -15,7 +15,7 @@
 Het evenement:
             </h1>
         </div>        
-        <button onclick=getevent()>
+        <button onclick=getevent() >
             get event
         </button>
     </header>
@@ -28,10 +28,17 @@ Het evenement:
             <label for="email">Emailadres</label>
             <input type="email" name="email" id="email">
 </div>
-<div id="takenSelectie">
-  <label for="takenlijst">Kies een taak:</label>
+<div id="takenSelectie" onclick=aanmelden()>
+    <!-- <input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+<label for="javascript">JavaScript</label> -->
+
+  <label for="takenlijst" >Kies een taak:</label>
             <select id="selectieTaak" name="takenlijst">
-                <option value="">Kies een taak</option>
+                <option value="" >Kies een taak</option>
             </select>
 </div>
             <button type="submit">Bevestig je medewerking</button>
