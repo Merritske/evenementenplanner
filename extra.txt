@@ -8,3 +8,4 @@ type feestje en dan voorbeelden
 een winkelketen mijn idee verkopen
 of bedrijven die diensten kunnen leveren, cateraars of tentenverhuurders laten adverteren op de app
 
+fs.writeFile via MongoDB - Database bijvoegen!!!

@@ -6,7 +6,7 @@ let waar = document.getElementById("waar")
 let wanneer = document.getElementById("wanneer")
 let eventGegevens = []
 let eventTonen = document.getElementById("gegevensTonen")
-
+var fs = require('fs')
 //EVENTPLANNER
 
 function opslaan() {
@@ -27,7 +27,10 @@ function opslaan() {
     // </ul>
     // `
   }
-
+  fs.appendFile('event1.txt',"heeloo", (err)=>{
+    if (err) throw err;
+  console.log('Saved!');
+  })
   console.log(eventcontainer)
 }
 console.log(eventTonen)
